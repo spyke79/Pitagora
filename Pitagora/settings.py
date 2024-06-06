@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Pitagora.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],#Dico che i template del sito saranno nella cartella templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

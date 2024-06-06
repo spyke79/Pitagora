@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block titolo_pagina %}Articoli{% endblock titolo_pagina %}
+{% block contenuto %}
+<h1>Lista Articoli</h1>
+
+{% for articolo in articoli_lista  %}
+
+<h3>{{ articolo.titolo }}</h3>
+<p>{{ articolo.corpo}}</p>
+<hr>
+{% endfor %}
+
+{% endblock contenuto %}
